@@ -20,7 +20,7 @@
             font-family: 'Montserrat', sans-serif;
             color: var(--text-color);
             background-color: var(--light-bg);
-            font-size: 18px;
+            font-size: 16px;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Alegreya', serif;
@@ -33,13 +33,15 @@
         .section-title {
             /* font-family: 'Amatic SC', cursive; */
             font-family: 'Cinzel', serif;
-            font-size: 3rem;
             color: var(--primary-color);
             font-weight: 700;
             margin: 2rem;
             position: relative;
             padding-bottom: 1rem;
         }
+
+        h2.section-title{font-size: 3rem;}
+        h3.section-title{font-size: 1.5rem;}
         .navbar-brand {
             font-family: 'Cinzel', serif;
             font-size: 1.5rem;
@@ -56,10 +58,11 @@
             
         }
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('bar-mitvah-baloons.jpg');
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('russel-smiling.jpeg');
             background-size: cover;
             background-position: center;
-            height: 80vh;
+            background-repeat: repeat;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -303,36 +306,43 @@
   
 
         /* .contact p{font-weight: 600;} */
+        .logo{width: 80px; height: 80px;}
+        .bold-text{font-weight: 600;}
+        .push-down{margin-top: 3rem;}
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Russell's Bar Mitzvah</a>
+            <a class="navbar-brand" href="#"><img class="logo" src="logo-black.png" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#welcome">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Russellisms</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#journey">Journey</a>
                     </li> -->
                 
                     <li class="nav-item">
-                        <a class="nav-link" href="#details">Event Details</a>
+                        <a class="nav-link" href="#details">Itinerary</a>
                     </li>
                   
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#map">Map & Directions</a>
                     </li> -->
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#areas-of-interest">Activities</a>
+                        <a class="nav-link" href="#areas-of-interest">Areas Of Interest</a>
                     </li>
                     <li class="nav-item"></li>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Hotel Info</a>
                     </li>
                   
                     <!-- <li class="nav-item">
@@ -346,8 +356,8 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
+    <header id="welcome" class="hero">
+        <div  class="container">
            
             <svg class="star-of-david" viewBox="0 0 466 466" >
 <path d="M372.158,233.012l63.008-109.114c1.43-2.475,1.43-5.525,0-8c-1.429-2.476-4.07-4-6.928-4H302.204L239.883,3.999
@@ -373,13 +383,13 @@
 	l-23.719-41.075l10.395-18.002l51.459,89.093H212.283z"/>
 </svg>
             <h1 class="display-3 fw-bold">Russell's Bar Mitzvah</h1>
-            <p class="lead fs-4">A Celebration of Faith, Family, and Coming of Age</p>
+            <!-- <p class="lead fs-4">A Celebration of Faith, Family, and Coming of Age</p> -->
             <div class="countdown" id="countdown"></div>
         </div>
     </header>
 
     <main class="container my-5">
-        <section id="about" class="mb-5 py-5">
+        <section id="about" class="m-5 py-5">
             <h2 class="section-title text-center">Mazel Tov Russell</h2>
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -398,13 +408,25 @@
                     </div> -->
                 </div>
                 <div class="col-md-6">
-                    <p class="lead">Russell has been eagerly preparing for his Bar Mitzvah and can't wait to celebrate with everyone. His journey has been one of growth, learning, and inspiration.</p>
-                    <p> In addition to his studies, Russell is passionate about:</p>
+                    <p class="lead">Welcome to Russell’s Bar Mitzvah website.  We are so excited for you to join us, as our family celebrates this milestone in Russell’s life.  Please check out our website for information about the weekend.  As we get closer to the date, we will be adding additional important information.
+                    </p>
+                     <p> Please explore the site and let us know if you have any questions!</p>  
+                     
+                    <p class="bold-text"> In addition to his studies, Russell is passionate about:</p>
+                    
                     <ul>
-                        <li>playing basketball with his Hoopcode club team</li>
-                        <li>competing in flag football for his school</li>
-                        <li>attending shul on Shabbat</li>
-                        <li>spending time with his friends</li>
+                        <li>He loves playing sports, especially basketball which is his favorite!</li>
+                        <li>His favorite subject in school is English Language Arts</li>
+                        <li>He volunteers at a ministry that provides food to hungry children around the world.</li>
+                        <li>Russell’s favorite food is sushi</li>
+                        <li>Russell does not like chocolate cake (his parents think he was switched at birth, but DNA tests prove he’s an Israel…)</li>
+                        <li>His favorite hobby at home is to play Fortnight with his friends</li>
+                        <li>His favorite color is black</li>
+                        <li>His favorite ice cream flavor is mint chocolate chip</li>
+                        <li>He loves to travel and explore new places.</li>
+                        <li>He does accents quite well!</li>
+                        <li>He loves to say, “I got you!”</li>         
+                        
                     </ul>
                     <p>He is excited to share this special simcha with family and friends as he steps into his role as a full member of the Jewish community.</p>
                 </div>
@@ -450,57 +472,128 @@
             </div>
         </section>
 
-        <section id="details" class="mb-5 py-5">
-            <h2 class="section-title text-center">Event Details</h2>
+        <section id="details" class="m-5 py-5 text-center">
+            <h2 class="section-title ">ITINERARY</h2>
+            <h3 class="md-5 section-title ">Friday</h3>
             <div class="row g-4">
-                <div class="col-md-3">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-synagogue me-2"></i>Shabbat Services</h5>
+                            <p class="card-text">Chabad Lubavitch of Arizona</p>
+                            <p class="card-text">Date: Friday, December 13, 2024</p>
+                            <p class="card-text">Candle Lighting:  5:04 pm<br/>
+                                Service Starts: 5.30 pm
+                            </p>
+                            <p class="card-text">Location:<br/>2110 East Lincoln Drive<br>Phoenix, AZ 85016 USA</p>
+                            <p class="card-text">Attire: Synagogue attire</p>
+
+                            <a href="https://www.google.com/maps/place/Chabad-Lubavitch+of+Arizona/@33.5391716,-112.0380667,709m/data=!3m1!1e3!4m15!1m8!3m7!1s0x872b72b27ee7862d:0x2ed35c1e43020863!2s2110+E+Lincoln+Dr,+Phoenix,+AZ+85016!3b1!8m2!3d33.5391716!4d-112.0354918!16s%2Fg%2F11ghtp38fp!3m5!1s0x872b72ad7db2828b:0x88fcc21c58215fb7!8m2!3d33.5388467!4d-112.0360483!16s%2Fg%2F1tjpqzkj?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"  class="btn btn-primary" target="_blank">View Map</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-utensils me-2"></i>Shabbat Dinner</h5>
-                            <p class="card-text">Date: Friday, December 13, 2024<br>Time: 6:30 PM</p>
-                            <p class="card-text">Location: 7655 N. 71st Street,<br>Paradise Valley,<br> AZ 85253</p>
-                            <a href="https://maps.app.goo.gl/SeQQHAD8KqCXKFpE8"  class="btn btn-primary" target="_blank">View Map</a>
+                            <p class="card-text push-down">Date: Friday, December 13, 2024
+                            </p>
+                            <p class="card-text">Time:  6:30 PM
+                               
+                            </p>
+                            <p class="card-text">Location:<br/> 7655 N. 71st Street<br> Paradise Valley, AZ 85253</p>
+                            <p class="card-text">Attire:  Casual</p>
+
+                            <a href="https://www.google.com/maps/place/7655+N+71st+St,+Paradise+Valley,+AZ+85253/@33.5480571,-111.9284938,1537m/data=!3m2!1e3!4b1!4m6!3m5!1s0x872b0b482abf14d9:0x3eb0a5c6e3cb511c!8m2!3d33.5480571!4d-111.9284938!16s%2Fg%2F11c15jl76g?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"  class="btn btn-primary" target="_blank">View Map</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                
+            </div>
+            <h3 class="md-5 section-title ">Saturday</h3>
+            <div class="row g-4 ">
+               <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-synagogue me-2"></i>Morning Service</h5>
-                            <p class="card-text">Date: Saturday, December 14, 2024<br>Time: 10 AM</p>
-                            <p class="card-text">Location: Congregation Beth Tefillah<br>6529 E Shea Blvd, Scottsdale,<br>AZ 85254</p>
-                            <a href="https://maps.app.goo.gl/3asczBth6e2chBwp7"  class="btn btn-primary" target="_blank">View Map</a>
+                            <h5 class="card-title"><i class="fas fa-utensils me-2"></i>Shabbat Services</h5>
+                            <p class="card-text">Congregation Beth Tefillah
+                            </p>
+                            <p class="card-text">Date: Saturday, December 14, 2024
+                            </p>
+                            <p class="card-text">Kislev 13<br/>Shacharit:  9:30 am<br/>
+                                Torah Service: 11:15 am<br/>Torah Reading:  Vayishlach
+                            </p>
+                            
+                            <p class="card-text">Kiddush luncheon will be served after services.</p>
+                            <p class="card-text">Location:<br/> 6529 East Shea Blvd<br>Scottsdale, AZ 85254</p>
+                            <p class="card-text">Attire: Synagogue attire</p>
+
+                            <a href="https://www.google.com/maps/place/Congregation+Beth+Tefillah/@33.5812238,-111.9424694,2835m/data=!3m1!1e3!4m14!1m7!3m6!1s0x872b74ecbec8e311:0xe35981a171151e5a!2sCongregation+Beth+Tefillah!8m2!3d33.5812194!4d-111.9398945!16s%2Fg%2F1tdqp3d9!3m5!1s0x872b74ecbec8e311:0xe35981a171151e5a!8m2!3d33.5812194!4d-111.9398945!16s%2Fg%2F1tdqp3d9?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"  class="btn btn-primary" target="_blank">View Map</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-glass-cheers me-2"></i>Celebration</h5>
-                            <p class="card-text">Date: Saturday, December 14, 2024<br>Time: 6.30 PM</p>
-                            <p class="card-text">Location: Arizona Biltmore Hotel <br>Phoenix,<br>2400 E Missouri Ave,<br>AZ 85016</p>
-                            <a href="https://maps.app.goo.gl/rHR8NPEefp45EJwu5"  class="btn btn-primary" target="_blank">View Map</a>
+                            <h5 class="card-title"><i class="fas fa-utensils me-2"></i>Saturday Night Celebration</h5>
+                            <p class="card-text">Arizona Biltmore
+                            </p>
+                            <p class="card-text">Date: Saturday, December 14, 2024
+                            </p>
+                            <p class="card-text">Shabbat Ends: 6:02 p.m<br/>
+                                Havdalah Service:  6:15 pm
+                            </p>
+                            <p class="card-text">Cocktail Reception begins:  6:30 pm – 7:30 pm
+                                <br/>Cottage Lawn “B”
+                            </p>
+                            <p class="card-text">Reception: 7:30 pm – 10:30 pm
+                                <br/>Grand Ballroom
+                            </p>
+                            
+                            <p class="card-text">Location:<br/>2400 East Missouri Ave<br/>
+                                Phoenix, AZ 85016
+                            </p>
+                                
+                 
+                            <a href="https://www.google.com/maps/place/Arizona+Biltmore,+LXR+Hotels+%26+Resorts/@33.5158657,-112.0294717,5673m/data=!3m1!1e3!4m13!1m2!2m1!1sarizona+biltmore!3m9!1s0x872b0d41fc35bae3:0x816ebd01724fcbf1!5m2!4m1!1i2!8m2!3d33.522979!4d-112.0232359!15sChBhcml6b25hIGJpbHRtb3JlWhIiEGFyaXpvbmEgYmlsdG1vcmWSAQVob3RlbOABAA!16zL20vMDJmazgx?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"  class="btn btn-primary" target="_blank">View Map</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+            </div>
+            <h3 class="md-5 section-title ">Sunday</h3>
+            <div class="row g-4 ">
+               <div class="col-md-6">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-utensils me-2"></i>Brunch</h5>
-                            <p class="card-text">Date: Sunday, December 15, 2024<br>Time: 9 AM</p>
-                            <p class="card-text">Location: Israel Hospitality Suite<br>Arizona Biltmore Hotel<br>AZ 85016</p>
-                            <a href="https://maps.app.goo.gl/XZkGisyjYcAuwXkx8" class="btn btn-primary" target="_blank" >View Map</a>
+                            <p class="card-text">Congregation Beth Tefillah
+                            </p>
+                            <p class="card-text">Date: Sunday, December 15, 2024
+
+                            </p>
+                            <p class="card-text">Time:  10:00 AM – 12:00 PM
+                            </p>
+                            <p class="card-text">Location:<br/> Arizona Biltmore<br>2400 East Missouri Ave<br/>Phoenix, AZ 85016
+
+                            </p>
+                            <p class="card-text">Israel Hospitality Suite</p>
+
+                            <a href="https://www.google.com/maps/place/Arizona+Biltmore,+LXR+Hotels+%26+Resorts/@33.5158657,-112.0294717,5673m/data=!3m1!1e3!4m13!1m2!2m1!1sarizona+biltmore!3m9!1s0x872b0d41fc35bae3:0x816ebd01724fcbf1!5m2!4m1!1i2!8m2!3d33.522979!4d-112.0232359!15sChBhcml6b25hIGJpbHRtb3JlWhIiEGFyaXpvbmEgYmlsdG1vcmWSAQVob3RlbOABAA!16zL20vMDJmazgx?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"  class="btn btn-primary" target="_blank">View Map</a>
                         </div>
                     </div>
                 </div>
+              
             </div>
         </section>
 
 
         <section class="parallax" style="background-image: url('museum2.webp');">
             <div class="quote">
-                <p>May you be blessed with strength, courage, and wisdom."</p>
-                <cite>- Traditional Jewish Blessing</cite>
+                <p class="bold-text">בְּנִי תּוֹרָתִ֣י אַל־תִּשְׁכָּ֑ח וּ֜מִצְו‍ֹתַ֗י יִצֹּ֥ר לִבֶּֽךָ
+                    <br/>
+                    “My son, do not forget my teaching, but let your heart keep my commandments; for they will add length to your days, years and peace to your life.”
+                    </p>
+                <cite>- Mishlei (Proverbs) – Chapter 3</cite>
             </div>
         </section>
 
@@ -558,7 +651,7 @@
             <div class="row">
                 <div class="col-md-3 mb-4">
                     <div class="interest-category">
-                        <h3>Hiking</h3>
+                        <h3>Hiking Trails</h3>
                         <div class="interest-item">
                             <h4>1. Piestewa Peak</h4>
                             <ul>
@@ -573,6 +666,13 @@
                                 <li><a href="https://www.alltrails.com/trail/us/arizona/camelback-mountain-via-echo-canyon-and-cholla-trails" target="_blank">AllTrails Information</a></li>
                             </ul>
                         </div>
+                        <div class="interest-item">
+                            <h4>3. Pinnacle Peak Park</h4>
+                            <ul>
+                                <li><a href="https://www.tripadvisor.com/Attraction_Review-g31350-d2409093-Reviews-Pinnacle_Peak_Park-Scottsdale_Arizona.html" target="_blank">TripAdvisor Reviews</a></li>
+                                <li><a href="https://www.alltrails.com/trail/us/arizona/pinnacle-peak-trail" target="_blank">AllTrails Information</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
@@ -580,9 +680,15 @@
                         <h3>Shopping</h3>
                         <div class="interest-item">
                             <h4>Biltmore Fashion Park</h4>
+                            <p>2502 E Camelback Rd<br/>Phoenix, AZ 85016<br/>Store Hours 10 am – 8:00 pm</p>
                             <p><a href="https://www.reddevelopment.com/biltmore-fashion-park/?utm_source=google&utm_medium=onlinesearch&utm_content=gmp_website_button&utm_campaign=yext" target="_blank">Official Website</a></p>
                         </div>
-                    </div>
+                        <div class="interest-item">
+                            <h4>Scottsdale Fashion Square - www.fashionsquare.com</h4>
+                            <p>7014 East Camelback Rd<br/>Scottsdale, AZ 85251<br/>Store Hours 10 am – 9 pm</p>
+                            <p><a href="https://www.reddevelopment.com/biltmore-fashion-park/?utm_source=google&utm_medium=onlinesearch&utm_content=gmp_website_button&utm_campaign=yext" target="_blank">Official Website</a></p>
+                        </div>
+                  </div>
                 </div>
          
                 <div class="col-md-3 mb-4">
@@ -590,7 +696,25 @@
                         <h3>Cultural Attractions</h3>
                         <div class="interest-item">
                             <h4>Taliesin West</h4>
-                            <p><a href="https://franklloydwright.org/taliesin-west/" target="_blank">Official Website</a></p>
+                            <p><a href="https://franklloydwright.org/taliesin-west/" target="_blank">Official Website</a><br/>
+                                Frank Lloyd Wright Foundation
+                                12621 N Frank Lloyd Wright Blvd.
+                                Scottsdale, AZ 85259</p>
+                            <h4>Desert Botanical Garden</h4>
+                            <p><a href="https://dbg.org" target="_blank">Official Website</a><br/>
+                                1201 N Galvin Parkway
+                                Phoenix, AZ 85008
+                            </p>
+                            <h4>Heard Museum</h4>
+                            <p><a href="https://heard.org" target="_blank">Official Website</a><br/>
+                                2301 N. Central Ave.
+                                Phoenix, AZ 85004
+                            </p>
+                            <h4>Phoenix Zoo</h4>
+                            <p><a href="https://www.phoenixzoo.org" target="_blank">Official Website</a><br/>
+                                455 N Galvin Parkway
+                                Phoenix, AZ 85008
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -610,7 +734,10 @@
         </section>
 
         <section id="contact" class="contact text-center">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title">HOTEL</h2>
+            <p><a target="_blank" href="https://www.arizonabiltmore.com/">Arizona Biltmore</a></p>
+            <p><a href="https://www.google.com/maps/place/Arizona+Biltmore,+LXR+Hotels+%26+Resorts/@33.522979,-112.0232359,709m/data=!3m2!1e3!4b1!4m9!3m8!1s0x872b0d41fc35bae3:0x816ebd01724fcbf1!5m2!4m1!1i2!8m2!3d33.522979!4d-112.0232359!16zL20vMDJmazgx?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"><i class="fas fa-map-marker-alt"></i> 2400 East Missouri Ave.<br/>
+                Phoenix, AZ 85016</a></p>
             <p><i class="fas fa-envelope"></i> <a href="mailto:asilkeisrael@gmail.com">asilkeisrael@gmail.com</a></p>
             <p><i class="fas fa-phone"></i> <a href="tel:7192015662">719-201-5662</a></p>
         </section>
@@ -645,24 +772,24 @@
     </script> -->
     <script>
         // Countdown timer
-        const countdownDate = new Date("Aug 12, 2024 10:00:00").getTime();
+        // const countdownDate = new Date("Dec 14, 2024 10:00:00").getTime();
         
-        const countdownTimer = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
+        // const countdownTimer = setInterval(function() {
+        //     const now = new Date().getTime();
+        //     const distance = countdownDate - now;
             
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        //     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        //     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        //     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        //     document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
             
-            if (distance < 0) {
-                clearInterval(countdownTimer);
-                document.getElementById("countdown").innerHTML = "The celebration has begun!";
-            }
-        }, 1000);
+        //     if (distance < 0) {
+        //         clearInterval(countdownTimer);
+        //         document.getElementById("countdown").innerHTML = "The celebration has begun!";
+        //     }
+        // }, 1000);
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
